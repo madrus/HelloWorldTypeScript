@@ -95,7 +95,7 @@
   <ItemGroup>
     <Content Include="Content\app.css" />
     <Content Include="Content\timer-styles.css" />
-    <Content Include="default.htm" />
+    <Content Include="car.html" />
     <Content Include="images\bg.png" />
     <Content Include="images\clear.png" />
     <Content Include="images\pause.png" />
@@ -121,17 +121,30 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\02-06-objects.ts" />
     <TypeScriptCompile Include="Scripts\02-01-grammar.ts" />
     <TypeScriptCompile Include="Scripts\02-02-timer.ts" />
     <TypeScriptCompile Include="Scripts\02-03-dynamic-types.ts" />
     <TypeScriptCompile Include="Scripts\02-04-ambient-declarations.ts" />
+    <TypeScriptCompile Include="Scripts\02-05-primitives.ts" />
+    <TypeScriptCompile Include="Scripts\02-07-functions.ts" />
+    <TypeScriptCompile Include="Scripts\02-08-interfaces.ts" />
     <TypeScriptCompile Include="Scripts\Car.ts" />
+    <TypeScriptCompile Include="Scripts\sandbox.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
